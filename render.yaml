@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: TusharX_bot
+    name: tusharx_bot
     env: python
-    buildCommand: ""
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn app:app"
     autoDeploy: true
